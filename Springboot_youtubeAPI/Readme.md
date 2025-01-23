@@ -23,6 +23,55 @@ The project leverages **Spring Boot** for building the REST API and includes com
 - **PUT `/youtube/playlists`**: Updates information about YouTube playlists.
 - **DELETE `/youtube/videos/{videoId}`**: Deletes a YouTube video by its ID.
 
+## Testing the API in Postman
+
+To test the API in **Postman**, follow these steps:
+
+### 1. GET Request to `/youtube/videos`:
+- **Method**: GET
+- **URL**: `http://localhost:8080/youtube/videos`
+- **Response**:
+  
+  "YouTube videos allow creators to upload, share, and watch videos."
+  ```
+
+### 2. POST Request to `/youtube/channels`:
+- **Method**: POST
+- **URL**: `http://localhost:8080/youtube/channels`
+- **Response**:
+  ```
+  "You can create a YouTube channel to upload and manage videos."
+  ```
+
+### 3. PUT Request to `/youtube/playlists`:
+- **Method**: PUT
+- **URL**: `http://localhost:8080/youtube/playlists`
+- **Response**:
+  ```
+  "YouTube playlists help organize and group your favorite videos together."
+  ```
+
+### 4. DELETE Request to `/youtube/videos/{videoId}`:
+- **Method**: DELETE
+- **URL**: `http://localhost:8080/youtube/videos/{videoId}`  
+  *(replace `{videoId}` with an actual video ID, e.g., `1234`)*
+- **Response**:
+  ```
+  "YouTube videos can be deleted by the video owner or admins."
+  ```
+
+---
+
+### Steps to Test Using Postman:
+1. Open **Postman**.
+2. Create a **New Request**.
+3. Select the desired HTTP method (**GET**, **POST**, **PUT**, **DELETE**).
+4. Enter the appropriate URL for the endpoint (e.g., `http://localhost:8080/youtube/videos`).
+5. If using **POST** or **PUT**, you can add request bodies (if needed).
+6. Click **Send** to execute the request and view the response.
+7. The API will return the respective response as defined in the code.
+
+
 ## Prerequisites
 
 Before running this project, ensure that you have the following installed:
